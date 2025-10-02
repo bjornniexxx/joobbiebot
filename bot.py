@@ -91,7 +91,7 @@ def crear_cuenta_tidal():
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user = update.effective_user
     if user.id in authorized_users:
-        await update.message.reply_html(f"¡Hola de nuevo, {user.mention_html()}! Ya tienes acceso a mis funciones. 😉")
+        await update.message.reply_html(f"¡Hola de nuevo, {user.mention_html()}! Ya tienes acceso a mis funciones :3")
         return
     
     pending_authorization.add(user.id)
@@ -154,7 +154,7 @@ async def handle_messages(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 # --- FUNCIÓN PRINCIPAL ---
 
 def main() -> None:
-    TOKEN = "TU_TOKEN_AQUI"
+    TOKEN = "8390821993:AAHk5hZ7FuH6Gq2335o7ru_vCWRC83IoqEE"
     logging.info("Función main() iniciada. Creando aplicación...") # <-- PRUEBA
     application = Application.builder().token(TOKEN).build()
 
